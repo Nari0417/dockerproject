@@ -1,0 +1,34 @@
+-> Take 3 servers
+sudo yum install docker - y
+systemctl start docker
+systemctl status docker
+cluster configuration(master, slave)
+docker swarm init --advertise-addr 10.765.30.65
+======================================================
+======================================================
+install jenkins by using jenkinsfile -> start jenkins> login into jenkins --> jenkins setup
+======================================================
+->need file in new git hub repository
+Dockerfile
+index.html
+Docker-compose.yml
+========================================================
+-> GIVE PERMISSIONS
+
+chmod 777 /var/run/docker.sock
+systemctl daemon-reload
+systemctl restart docker.service
+========================================
+->start pipeline---> build the pipe line
+========================================
+->COMMAND:
+TO DEPLOY : docker stack deploy --compose-file docker-compose.yml stack_name
+TO LIST : docker stack ls
+TO GET CONTAINERS OF A STACK : docker stack ps stack_name
+TO GET SERVICES OF A STACK: docker stack services stack_name
+TO DELETE A STACK: docker stack rm stack_name
+===================================================================
+o/p--->10.0.20.74:80 , 10.0.20.74:82 , 10.0.20.74:84 10.0.20.74:85
+====================================================================
+
+IF any dought kindly refer dockermsproject/PROCESS------its present in git.
