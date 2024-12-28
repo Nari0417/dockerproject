@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  train:
+    image: nari0417/train:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+  recharge:
+    image: nari0417/recharge:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  paytm:
+    image: nari0417/paytm:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
