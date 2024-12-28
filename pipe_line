@@ -1,3 +1,9 @@
+===================================================================
+parametrs
+$img------ train:v1 , paytm:v1 , reacharge:v1 ,movie----->its use in image creation
+$repo------nari0417/train , nari0417/paytm , nari0417/recharge , nari0417/movie -----> docker hub repositories.
+=======================================================================================
+
 pipeline {
     agent any
 
